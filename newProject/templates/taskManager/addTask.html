@@ -1,0 +1,11 @@
+{%extends "taskManager/layout.html"%}
+   
+{%block body%}
+    <h1>Add Task</h1>
+    <form action="{% url 'taskManager:add' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button>Submit</button>
+     <a href="{% url 'taskManager:index'%}">Tasks Page </a>
+    </form>
+{%endblock%}

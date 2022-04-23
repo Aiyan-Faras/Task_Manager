@@ -1,0 +1,16 @@
+
+{%extends "taskManager/layout.html"%}
+
+
+{% block body %}
+    <h1>My TaskManager</h1>
+
+    <ul>
+      {% for i in tasks %}
+      <li >{{ i }}</li>
+      {% empty %}
+      <li> No Task for now </li>
+      {% endfor %}
+    </ul>
+    <a href="{%url 'taskManager:add'%}">Add Task</a>
+{%endblock%}

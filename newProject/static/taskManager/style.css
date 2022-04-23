@@ -1,0 +1,22 @@
+*{
+    background-color:#8b2b2b;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    list-style: none;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color:#57d7f8;
+}
